@@ -1,0 +1,19 @@
+.CLASA-UNA, .CLASA-DOUA{
+    background-color: pink;
+     font-size: 25px;
+    font-family: Arial;
+    
+} 
+.CLASA-DOUA{
+    font-size: 40px;
+}
+
+#eye-deez {
+     font-size: 50px;
+     color: blue;
+}
+#eye-deez-two {
+    background-color: lime;
+     font-size: 30px;
+    font-weight: bold;
+}
