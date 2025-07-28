@@ -17,9 +17,15 @@ body {
 
 .modal {
   background: white;
-  width: 480px;
+  width: 505px;
+  height: 210px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  justify-content: space-between; ; 
+
+  /* changing the height and width and the  justify content is unnecessary, instead do padding + gap  */
+   
 }
 
 .icon {
@@ -33,6 +39,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 16px;
+
+  /* margin unneccessary see above (gap)_ */
 }
 
 .close-button {
@@ -63,7 +72,32 @@ button.continue {
 }
 
 button.cancel {
+
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+   
+   
+}
+
+ 
+.container-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly ;
+  margin-right: 16px;
+   
+}
+
+.sub-container-one {
+  display: flex;
+  justify-content: space-between;
+   
+}
+
+ 
+
+.header {
+  font-weight: bold;
+  font-size: 20px;
 }
