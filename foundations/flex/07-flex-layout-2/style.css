@@ -1,29 +1,94 @@
 body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+   
 }
 
 .header {
   height: 72px;
+  font-weight: 900;
+  font-size: 32px;
   background: darkmagenta;
   color: white;
+  align-content: center;
+  padding-left: 16px;
 }
 
 .footer {
+  display: flex;
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 16px; 
+  
+   
 }
+
+ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  gap: 16px;
+   
+   
+}
+a{
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+   
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  gap: 32px;
+  padding : 48px;
+   
+
+   
+}
+/* @media  (max-width: 800px) {
+ 
+  .cards-container {
+   flex-direction: column;
+  }
+  
+} */
+
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  height: 300px; 
+  width: 300px; 
+  padding: 8px; 
+  box-sizing: border-box;
+  font-size: 16px;
+   
+   
+}
+
+/* THE ONLY PROBLEM IM HAVING IS WITH THE CARD AND HOW THEY SHRINK !!!!!!! */
+.sub-body {
+  display: flex;
+  flex-grow:1 ;
+  
+   
 }
